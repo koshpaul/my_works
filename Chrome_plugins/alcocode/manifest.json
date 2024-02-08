@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "AlcoCode",
+  "version": "1.1",
+  "icons": { "16": "alcocode16.png" , "48": "alcocode48.png" , "128": "alcocode128.png"},
+  "content_scripts": [
+    {
+      "matches": ["*://*/*createChargeOn.php" , "*://*/*products.php"],
+      "js": ["bignumber.js" , "jquery-1.11.3.min.js" , "content.js"]
+    }
+  ],
+  "permissions": [
+    "http://api.xn--80affoam1c.xn--p1ai/*"
+  ],
+
+	
+}
